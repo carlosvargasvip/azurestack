@@ -6,12 +6,12 @@
 ####################
 #$logfilename=demobuildout-`date +%m%d%y%I%M%S`.log
 
-print "Starting of Datto SE Build Out Script... "
+print "Starting of Demo Build Out Script... "
 
 clear
-echo "Welcome to the Datto SE Azure Build Environment Script"
+echo "Welcome to the Demo Azure Build Environment Script"
 echo ""
-echo "What's your username? Example: cvargas"
+echo "What's your username? Example: jsmith"
 read demouser
 
 echo "Type passwords for your vm's. 12 Characters minimum Example: P@ssw0rd1234"
