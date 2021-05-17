@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to build Datto SE Environment
+# Script to build Demo Environment
 
 #####################
 # Variables
