@@ -31,7 +31,7 @@ az network vnet create -g $demouser-DEMO-RG -n DemoNetwork --address-prefix 10.0
 
 # Create VM for Demo Environment
 echo "Creating VM for Demo... - Please wait"
-az vm create -n demovm1-$demouser -g $demouser-DEMO-RG --image Win2016Datacenter --size Standard_B2s --admin-username $demouser --admin-password $vmpass
+az vm create -n $demouser-vm1 -g $demouser-DEMO-RG --image Win2016Datacenter --size Standard_B2s --admin-username $demouser --admin-password $vmpass
 
 # Create Restore Resource Group
 echo "Creating Resource Group for Restore Test..."
