@@ -30,8 +30,11 @@ echo "Creating Demo Network..."
 az network vnet create -g $demouser-DEMO-RG -n DemoNetwork --address-prefix 10.0.0.0/16 --subnet-name DemoSubnet --subnet-prefix 10.0.0.0/24
 
 # Create VM for Demo Environment
-echo "Creating VM for Demo... - Please wait"
+echo "Creating VM1 for Demo... - Please wait"
 az vm create -n $demouser-vm1 -g $demouser-DEMO-RG --image Win2016Datacenter --size Standard_B2s --admin-username $demouser --admin-password $vmpass
+
+echo "Creating VM2 for Demo... - Please wait"
+az vm create -n $demouser-vm2 -g $demouser-DEMO-RG --image Win2016Datacenter --size Standard_B2s --admin-username $demouser --admin-password $vmpass
 
 # Create Restore Resource Group
 echo "Creating Resource Group for Restore Test..."
